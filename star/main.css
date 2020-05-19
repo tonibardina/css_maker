@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5C017;
+}
+
+button {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: #F5C017;
+  outline: none;
+  font-size: 20px;
+  font-family: "Oswald" sans-serif;
+  font-weight: 900;
+}
+button:before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 15px;
+  left: 15px;
+  background-image: url("./star.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+button:hover:before {
+  filter: none;
+}
+
+.animated {
+  transition: 0.2s ease all;
+}
+.animated:before {
+  animation: thankYou 1.5s linear;
+}
+
+.noStar:before {
+  display: none;
+}
+
+@keyframes thankYou {
+  20% {
+    transform: rotate(-30deg) translate(10px, 50px);
+  }
+  30% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    transform: translate(300px, 20px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

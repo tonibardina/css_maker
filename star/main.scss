@@ -1,0 +1,71 @@
+$main-color: #F5C017;
+$secondary-color: #181818;
+$light-secondary: #333333;
+$instagram-bg: #000000;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+}
+
+button {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,.2);
+    background-color: white;
+    color: $main-color;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Oswald' sans-serif;
+    font-weight: bolder;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 15px;
+        left: 15px;
+        background-image: url('./star.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(100%);
+    }
+    &:hover {
+        &:before {
+            filter: none;
+        }
+    }
+}
+
+.animated {
+    transition: .2s ease all;
+    &:before {
+        animation: thankYou 1.5s linear;
+    }
+}
+
+.noStar {
+    &:before {
+        display: none;
+    }
+}
+
+@keyframes thankYou {
+    20% {
+        transform: rotate(-30deg) translate(10px, 50px);
+    }
+    30% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        transform: translate(300px, 20px);
+    }
+}
