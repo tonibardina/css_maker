@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #181818;
+}
+
+.alien {
+  position: relative;
+  background-color: #131313;
+  width: 300px;
+  height: 300px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 200px;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.alien:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #181818;
+  -webkit-box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 200px;
+  top: 200px;
+  left: 100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.alien:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #181818;
+  -webkit-box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 200px;
+  top: 100px;
+  left: 200px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.alien:hover {
+  background: radial-gradient(circle, #a2f793, #58f03e);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5), 0 0 20px 20px rgba(88, 240, 62, 0.4);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5), 0 0 20px 20px rgba(88, 240, 62, 0.4);
+}
+/*# sourceMappingURL=main.css.map */

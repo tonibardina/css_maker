@@ -1,7 +1,13 @@
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: #F5C017;
@@ -13,16 +19,18 @@ button {
   height: 180px;
   border-radius: 20px;
   border: none;
-  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
   background-color: white;
   color: #F5C017;
   outline: none;
   font-size: 20px;
-  font-family: "Oswald" sans-serif;
-  font-weight: 900;
+  font-family: 'Oswald' sans-serif;
+  font-weight: bolder;
 }
+
 button:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 150px;
   height: 150px;
@@ -31,34 +39,56 @@ button:before {
   background-image: url("./star.png");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
+
 button:hover:before {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .animated {
-  transition: 0.2s ease all;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
 }
+
 .animated:before {
-  animation: thankYou 1.5s linear;
+  -webkit-animation: thankYou 1.5s linear;
+          animation: thankYou 1.5s linear;
 }
 
 .noStar:before {
   display: none;
 }
 
-@keyframes thankYou {
+@-webkit-keyframes thankYou {
   20% {
-    transform: rotate(-30deg) translate(10px, 50px);
+    -webkit-transform: rotate(-30deg) translate(10px, 50px);
+            transform: rotate(-30deg) translate(10px, 50px);
   }
   30% {
     opacity: 100%;
   }
   100% {
     opacity: 0%;
-    transform: translate(300px, 20px);
+    -webkit-transform: translate(300px, 20px);
+            transform: translate(300px, 20px);
   }
 }
 
+@keyframes thankYou {
+  20% {
+    -webkit-transform: rotate(-30deg) translate(10px, 50px);
+            transform: rotate(-30deg) translate(10px, 50px);
+  }
+  30% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    -webkit-transform: translate(300px, 20px);
+            transform: translate(300px, 20px);
+  }
+}
 /*# sourceMappingURL=main.css.map */
