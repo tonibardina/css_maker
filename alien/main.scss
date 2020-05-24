@@ -1,7 +1,6 @@
 $main-color: #181818;
 $alien: rgb(88, 240, 62);
 
-
 @mixin eye($side) {
     content: '';
     position: absolute;

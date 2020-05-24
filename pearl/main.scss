@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+$main-color: rgb(255, 247, 247);
+$rose: rgb(248, 152, 219);
+$green: rgb(174, 255, 178);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(253, 229, 240);
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    font-family: 'DM Serif Display', serif;
+    background: linear-gradient(45deg, rgba(255, 73, 200, 0.05), $main-color,$main-color, rgba(188, 255, 192, 0.5));
+    box-shadow: 
+        10px 10px 20px 0 rgba(110, 2, 61, 0.15),
+        inset 0 0 5px 5px rgba(190, 0, 79, 0.15),
+        inset 0 0 10px 10px lighten(rgba(255, 247, 247, 1), 50%)
+        ;
+    border-radius: 20px;
+    font-size: 50px;
+    line-height: 40px;
+    color: rgba(255, 247, 247, .8);
+
+    & p {
+        position: relative;
+        margin: 0;
+        z-index: 1;
+
+        &:before {
+            content: attr(title);
+            z-index: -1;
+            color: rgb(202, 143, 15);          
+            position: absolute;
+            top: -.51px;
+            left: -.51px;
+            filter: blur(.7px);
+        }
+    }
+}

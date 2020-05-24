@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fde5f0;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+  font-family: 'DM Serif Display', serif;
+  background: linear-gradient(45deg, rgba(255, 73, 200, 0.05), #fff7f7, #fff7f7, rgba(188, 255, 192, 0.5));
+  -webkit-box-shadow: 10px 10px 20px 0 rgba(110, 2, 61, 0.15), inset 0 0 5px 5px rgba(190, 0, 79, 0.15), inset 0 0 10px 10px white;
+          box-shadow: 10px 10px 20px 0 rgba(110, 2, 61, 0.15), inset 0 0 5px 5px rgba(190, 0, 79, 0.15), inset 0 0 10px 10px white;
+  border-radius: 20px;
+  font-size: 50px;
+  line-height: 40px;
+  color: rgba(255, 247, 247, 0.8);
+}
+
+.card p {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+.card p:before {
+  content: attr(title);
+  z-index: -1;
+  color: #ca8f0f;
+  position: absolute;
+  top: -.51px;
+  left: -.51px;
+  -webkit-filter: blur(0.7px);
+          filter: blur(0.7px);
+}
+/*# sourceMappingURL=main.css.map */
