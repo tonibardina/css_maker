@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+$main-color: rgb(4, 0, 27);
+$highlight-color: #F5C017;
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: darken($main-color, 4%);
+    font-family: 'EB Garamond', serif;
+    font-size: 17.3px;
+    line-height: 35px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    background-image: url('./nike.jpg');
+    background-size: 430px 280px;
+    background-position: -25px 0;
+    background-repeat: no-repeat;
+    background-color: $main-color;
+    width: 320px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 0 darken($main-color, 5%);
+
+    &:hover {
+        &:before {
+            animation: light 2s infinite;
+        }
+    }
+
+    &:before {
+        content: '';
+        width: 320px;
+        height: 500px;
+        border-radius: 30px;
+        position: absolute;
+        backdrop-filter: hue-rotate(0deg);
+        left: 0;
+        box-shadow: none;
+    }
+
+    & div {
+        position: absolute;
+        padding: 30px;
+        left: 0;
+        height: 190px;
+        border-radius: 30px;
+        width: calc(100% - 60px);
+        background-color: $main-color;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: white;
+    }
+
+    & h1 {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    & button {
+        background: linear-gradient(to right, #FE4F51, #F47657);
+        border: none;
+        border-radius: 30px;
+        padding: 5px 10px 5px 10px;
+        color: white;
+        min-width: 40%;
+        align-self: flex-end;
+    }
+}
+
+
+@keyframes light {
+    50% {
+        backdrop-filter: hue-rotate(360deg);
+    }
+}

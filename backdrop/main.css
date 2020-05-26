@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #010007;
+  font-family: 'EB Garamond', serif;
+  font-size: 17.3px;
+  line-height: 35px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  background-image: url("./nike.jpg");
+  background-size: 430px 280px;
+  background-position: -25px 0;
+  background-repeat: no-repeat;
+  background-color: #04001b;
+  width: 320px;
+  height: 500px;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 10px 0 #000002;
+          box-shadow: 10px 10px 10px 0 #000002;
+}
+
+.card:hover:before {
+  -webkit-animation: light 2s infinite;
+          animation: light 2s infinite;
+}
+
+.card:before {
+  content: '';
+  width: 320px;
+  height: 500px;
+  border-radius: 30px;
+  position: absolute;
+  -webkit-backdrop-filter: hue-rotate(0deg);
+          backdrop-filter: hue-rotate(0deg);
+  left: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card div {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  height: 190px;
+  border-radius: 30px;
+  width: calc(100% - 60px);
+  background-color: #04001b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.card h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.card button {
+  background: -webkit-gradient(linear, left top, right top, from(#FE4F51), to(#F47657));
+  background: linear-gradient(to right, #FE4F51, #F47657);
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  min-width: 40%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@-webkit-keyframes light {
+  50% {
+    -webkit-backdrop-filter: hue-rotate(360deg);
+            backdrop-filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes light {
+  50% {
+    -webkit-backdrop-filter: hue-rotate(360deg);
+            backdrop-filter: hue-rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
