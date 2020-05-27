@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+$main-color: rgb(68, 18, 161);
+$secondary-color: rgb(255, 204, 65);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, darken($main-color, 20%), darken($main-color, 22%));
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    font-family: "DM Serif Display", serif;
+    background-color: $main-color;
+    box-shadow: 10px 10px 20px 0 darken($main-color, 23%);
+    border-radius: 20px;
+
+    & h1 {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: 'Oswald';
+        font-size: 25px;
+    }
+
+    & .sun {
+        position: absolute;
+        opacity: 20%;
+        top: 25px;
+        left: 25px;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        background-color: lighten($main-color, 10%);
+        box-shadow: 0 0 0 20px lighten($main-color, 20%), 0 0 0 40px lighten($main-color, 40%);
+    }
+
+    & .mountain {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background-color: lighten($main-color, 20%);
+        border-radius: 20px;
+        transform: rotate(45deg);
+        left: -150px;
+        top: 250px;
+        &:last-child {
+            background-color: lighten($main-color, 40%);
+            left: -20px;
+        }
+    }
+
+    & .sunsetLayer {
+        animation: sunset 3s infinite;
+        position: absolute;
+        width: 260px;
+        height: 360px;
+        top: 0;
+        left: 0;
+        backdrop-filter: hue-rotate(70deg);
+        z-index: 2;
+    }
+}
+
+@keyframes sunset {
+    0% {
+        top: -360px;
+    }
+}

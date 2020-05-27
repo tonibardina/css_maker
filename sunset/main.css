@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#1d0845), to(#19073c));
+  background: linear-gradient(to right, #1d0845, #19073c);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px;
+  font-family: "DM Serif Display", serif;
+  background-color: #4412a1;
+  -webkit-box-shadow: 10px 10px 20px 0 #170637;
+          box-shadow: 10px 10px 20px 0 #170637;
+  border-radius: 20px;
+}
+
+.card h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald';
+  font-size: 25px;
+}
+
+.card .sun {
+  position: absolute;
+  opacity: 20%;
+  top: 25px;
+  left: 25px;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: #5717cf;
+  -webkit-box-shadow: 0 0 0 20px #7131e8, 0 0 0 40px #b08df2;
+          box-shadow: 0 0 0 20px #7131e8, 0 0 0 40px #b08df2;
+}
+
+.card .mountain {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #7131e8;
+  border-radius: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -150px;
+  top: 250px;
+}
+
+.card .mountain:last-child {
+  background-color: #b08df2;
+  left: -20px;
+}
+
+.card .sunsetLayer {
+  -webkit-animation: sunset 3s infinite;
+          animation: sunset 3s infinite;
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: hue-rotate(70deg);
+          backdrop-filter: hue-rotate(70deg);
+  z-index: 2;
+}
+
+@-webkit-keyframes sunset {
+  0% {
+    top: -360px;
+  }
+}
+
+@keyframes sunset {
+  0% {
+    top: -360px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

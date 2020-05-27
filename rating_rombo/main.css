@@ -1,0 +1,72 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 175px;
+  height: 175px;
+}
+
+.container div {
+  width: 87.5px;
+  height: 87.5px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container div span {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.container div:first-child:hover {
+  -webkit-box-shadow: 6px 0 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 0 5px 0 rgba(0, 0, 0, 0.1);
+  color: blue;
+}
+
+.container div:nth-child(2):hover {
+  -webkit-box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+  color: #e6e600;
+}
+
+.container div:nth-child(3):hover {
+  -webkit-box-shadow: 0 -6px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -6px 5px 0 rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+.container div:nth-child(4):hover {
+  -webkit-box-shadow: -6px 0 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: -6px 0 5px 0 rgba(0, 0, 0, 0.1);
+  color: greenyellow;
+}
+/*# sourceMappingURL=main.css.map */

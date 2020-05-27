@@ -1,0 +1,58 @@
+$main-color: white;
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+}
+
+.container {
+    transform: rotate(45deg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 175px;
+    height: 175px;
+
+    & div {
+        width: 87.5px;
+        height: 87.5px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        & span {
+            transform: rotate(-45deg);
+        }
+
+        &:first-child {
+            &:hover {
+                box-shadow:  6px 0 5px 0 rgba(0,0,0,.1);
+                color: blue;
+            }
+        }
+        &:nth-child(2) {
+            &:hover {
+                box-shadow:  0 6px 5px 0 rgba(0,0,0,.1);
+                color: rgb(230, 230, 0);
+            }
+        }
+        &:nth-child(3) {
+            &:hover {
+                box-shadow:  0 -6px 5px 0 rgba(0,0,0,.1);
+                color: red;
+            }
+        }
+        &:nth-child(4) {
+            &:hover {
+                box-shadow:  -6px 0 5px 0 rgba(0,0,0,.1);
+                color: greenyellow;
+            }
+        }
+    }
+}
