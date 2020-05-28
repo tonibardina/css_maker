@@ -458,8 +458,8 @@ body {
   width: 130px;
   height: 130px;
   border-radius: 500px;
-  -webkit-box-shadow: inset 20px 20px 20px 0 rgba(117, 129, 255, 0.2), inset 0 0 0 7px #f4f5ff, 15px 15px 20px 0 #cbd0ff, -5px -5px 20px 0 white;
-          box-shadow: inset 20px 20px 20px 0 rgba(117, 129, 255, 0.2), inset 0 0 0 7px #f4f5ff, 15px 15px 20px 0 #cbd0ff, -5px -5px 20px 0 white;
+  -webkit-box-shadow: inset 20px 20px 20px 0 rgba(117, 129, 255, 0.2), inset 0 0 0 7px #f4f5ff, 15px 15px 20px 0 #cbd0ff, -12px -12px 25px 0 white;
+          box-shadow: inset 20px 20px 20px 0 rgba(117, 129, 255, 0.2), inset 0 0 0 7px #f4f5ff, 15px 15px 20px 0 #cbd0ff, -12px -12px 25px 0 white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

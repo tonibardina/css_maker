@@ -51,7 +51,7 @@ body {
         border-radius: 500px;
         box-shadow: inset 20px 20px 20px 0 rgba(darken($color: $main-color, $amount: 25%), 0.2),
             inset 0 0 0 7px $main-color, 15px 15px 20px 0 darken($main-color, 8%),
-            -5px -5px 20px 0 lighten($color: $main-color, $amount: 50%);
+            -12px -12px 25px 0 lighten($color: $main-color, $amount: 50%);
         display: flex;
         justify-content: center;
         align-items: center;
