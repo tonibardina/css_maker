@@ -517,7 +517,7 @@ body {
 .eye {
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, #fcf467 0%, #bc430d 50%, #250507 70%);
+  background: radial-gradient(circle, #fcf467 0%, #bc430d 50%, #250507 100%);
   border-radius: 100px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -41,6 +41,18 @@ function moveEye(m) {
 		translate(${tx}px, ${0}px)
 		rotate(-45deg)
 	`;
+
+	let eyeGradientPos = 0
+
+	if (tx < 0) {
+		eyeGradientPos = 50 - (Math.abs(tx/2))
+	} else {
+		eyeGradientPos = 50 + (Math.abs(tx/2))
+	}
+
+	setTimeout(() => {
+		document.querySelector('.eye').style.background = `radial-gradient(circle at ${eyeGradientPos}%, rgba(252, 244, 103, 1) 0%, rgb(188, 67, 13) 50%, rgba(37, 5, 7, 1) 100%)`
+	}, 200)
 }
 
 window.addEventListener("mousemove", moveEye);
