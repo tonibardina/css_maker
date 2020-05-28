@@ -97,11 +97,11 @@ body {
         height: 40px;
         border-top-left-radius: 100px;
         border-bottom-right-radius: 100px;
-        background-color: rgb(34, 34, 34);
+        background:  rgb(49, 0, 0);
         position: absolute;
         box-shadow: 
-            0 0 0.7em 0.4em rgba(255, 255, 255, 0.7), 
-            0 0 0.7em 0.8em rgba(252, 244, 103, .7)
+            0 0 0.7em 0.4em rgba(255, 255, 255, .3), 
+            0 0 0.7em 0.8em rgba(252, 244, 103, .3)
             ;
     }
 }

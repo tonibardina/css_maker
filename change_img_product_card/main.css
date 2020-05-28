@@ -64,11 +64,11 @@ body {
 
 .card__fixed__product__title {
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .card__fixed__product__desc {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 150;
 }
 
