@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Helvetica Neue';
+    background-color: #ffffff;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 20px 10px rgba(150,150,150,.2);
+    background-color: transparent;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        background: black 15px 17px / 50% url('./add_to_cart.png') no-repeat;
+        right: -20px;
+        top: -20px;
+    }
+
+    &__rotating {
+        animation: rotateShoe 10s infinite;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+        height: 200px;
+        background: transparent 0 -130px / 100% url('./shoe1.jpg') no-repeat;
+    }
+
+    &__fixed {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 25px;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        &__product__title {
+            margin: 0;
+            font-size: 20px;
+        }
+        &__product__desc {
+            font-size: 15px;
+            font-weight: 150;
+        }
+        &__details {
+            &__sizes {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    & li {
+                        padding: 5px 12px 5px 12px;
+                        border-radius: 5px;
+                        border: 1px solid lightgray;
+                        list-style: none;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes rotateShoe {
+    20% {
+        background: 0 -130px / 100% url('./shoe1.jpg') no-repeat;
+    }
+    40% {
+        background: 0 -80px / 100% url('./shoe2.jpg') no-repeat;
+    }
+    60% {
+        background: 0 -130px / 100% url('./shoe3.jpg') no-repeat;
+    }
+    80% {
+        background: 0 -130px / 100% url('./shoe4.jpg') no-repeat;
+    }
+}

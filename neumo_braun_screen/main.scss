@@ -1,0 +1,160 @@
+$main-color: #f4f5ff;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Helvetica Neue", sans-serif;
+    background: linear-gradient(45deg, darken($main-color, 8%), $main-color);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border-radius: 500px;
+        border: 2px solid darken($main-color, 6%);
+    }
+
+    & i {
+        width: 1px;
+        height: 8px;
+        border-radius: 50px;
+        background-color: darken($main-color, 10%);
+        position: absolute;
+        top: 85px;
+        z-index: 10;
+
+        @for $i from 1 through 81 {
+            &:nth-child(#{$i}) {
+                transform: rotate(#{$i * 360/80}deg) translate(0, 110px);
+            }
+        }
+    }
+
+    & .screen {
+        width: 130px;
+        height: 130px;
+        border-radius: 500px;
+        box-shadow: inset 20px 20px 20px 0 rgba(darken($color: $main-color, $amount: 25%), 0.2),
+            inset 0 0 0 7px $main-color, 15px 15px 20px 0 darken($main-color, 8%),
+            -5px -5px 20px 0 lighten($color: $main-color, $amount: 50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: lighten($main-color, 20%);
+
+        & h1 {
+            margin: 0;
+            padding-bottom: 4px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: rgb(217, 226, 208);
+            width: 116px;
+            height: 116px;
+            border-radius: 500px;
+            box-shadow: inset 10px 10px 15px 0 rgba(43, 42, 42, 0.2),
+            inset -7px -7px 10px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        & .screenInfo {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 116px;
+            height: 116px;
+            border-radius: 500px;
+            overflow: hidden;
+            color: rgb(104, 109, 97);
+            font-size: 30px;
+            font-weight: 500;
+
+            & div:not(:last-child) {
+                border-bottom: 1px solid rgb(184, 184, 184);
+            }
+
+            & .screenInfoContainer {
+                position: absolute;
+                width: 200px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: rgba(155, 155, 155, .5);
+                font-size: 25px;
+                opacity: 50%;
+
+                & .freq {
+                    display: flex;
+                    width: 150px;
+                    justify-content: space-between;
+                    & p {
+                        margin: 0;
+                        &:nth-child(2) {
+                            color: rgb(0, 0, 0)      
+                        }
+                    }
+                }
+
+                & .numbers {
+                    & p {
+                        &:nth-child(2) {
+                            color: rgb(0, 0, 0)      
+                        }
+                    }
+                }
+
+                & .numbers, .fmOrAm {
+                    width: 130px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 15px;
+                    margin: 10px;
+    
+                    & p {
+                        margin: 0;
+                    }
+                }
+
+                & .fmOrAm {
+                    align-self:flex-end;
+                    justify-content: space-between;
+                    width: 110px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    &>p{
+                        color: rgb(0, 0, 0);
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 40px;
+                    background-color: red;
+                    top: -3px;
+                }
+            }
+        }
+    }
+}

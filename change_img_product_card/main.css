@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Helvetica Neue';
+  background-color: #ffffff;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 15px 20px 10px rgba(150, 150, 150, 0.2);
+          box-shadow: 10px 15px 20px 10px rgba(150, 150, 150, 0.2);
+  background-color: transparent;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background: black 15px 17px/50% url("./add_to_cart.png") no-repeat;
+  right: -20px;
+  top: -20px;
+}
+
+.card__rotating {
+  -webkit-animation: rotateShoe 10s infinite;
+          animation: rotateShoe 10s infinite;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 200px;
+  background: transparent 0 -130px/100% url("./shoe1.jpg") no-repeat;
+}
+
+.card__fixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card__fixed__product__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card__fixed__product__desc {
+  font-size: 15px;
+  font-weight: 150;
+}
+
+.card__fixed__details__sizes ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.card__fixed__details__sizes ul li {
+  padding: 5px 12px 5px 12px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  list-style: none;
+  font-weight: 200;
+}
+
+@-webkit-keyframes rotateShoe {
+  20% {
+    background: 0 -130px/100% url("./shoe1.jpg") no-repeat;
+  }
+  40% {
+    background: 0 -80px/100% url("./shoe2.jpg") no-repeat;
+  }
+  60% {
+    background: 0 -130px/100% url("./shoe3.jpg") no-repeat;
+  }
+  80% {
+    background: 0 -130px/100% url("./shoe4.jpg") no-repeat;
+  }
+}
+
+@keyframes rotateShoe {
+  20% {
+    background: 0 -130px/100% url("./shoe1.jpg") no-repeat;
+  }
+  40% {
+    background: 0 -80px/100% url("./shoe2.jpg") no-repeat;
+  }
+  60% {
+    background: 0 -130px/100% url("./shoe3.jpg") no-repeat;
+  }
+  80% {
+    background: 0 -130px/100% url("./shoe4.jpg") no-repeat;
+  }
+}
+/*# sourceMappingURL=main.css.map */
