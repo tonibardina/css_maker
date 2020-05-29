@@ -10,22 +10,35 @@ body {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background: rgba(255, 218, 218, 0.801);
 }
 
 .container {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  width: 175px;
+  height: 175px;
+  border-radius: 20px;
+  background-color: rgba(245, 0, 0, 0.801);
+  padding: 10px;
+}
+
+.container .buttons {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 175px;
-  height: 175px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 0 2px rgba(109, 0, 0, 0.7);
+          box-shadow: 0 0 0 2px rgba(109, 0, 0, 0.7);
 }
 
-.container div {
+.container .buttons div {
   width: 87.5px;
   height: 87.5px;
   margin: 0;
@@ -41,32 +54,28 @@ body {
   cursor: pointer;
 }
 
-.container div span {
+.container .buttons div span {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.container div:first-child:hover {
-  -webkit-box-shadow: 6px 0 5px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 6px 0 5px 0 rgba(0, 0, 0, 0.1);
-  color: blue;
+.container .buttons div:first-child:hover {
+  -webkit-box-shadow: inset 6px 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: inset 6px 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container div:nth-child(2):hover {
-  -webkit-box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.1);
-  color: #e6e600;
+.container .buttons div:nth-child(2):hover {
+  -webkit-box-shadow: inset 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 6px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container div:nth-child(3):hover {
-  -webkit-box-shadow: 0 -6px 5px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 -6px 5px 0 rgba(0, 0, 0, 0.1);
-  color: red;
+.container .buttons div:nth-child(3):hover {
+  -webkit-box-shadow: inset 0 -6px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 -6px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container div:nth-child(4):hover {
-  -webkit-box-shadow: -6px 0 5px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: -6px 0 5px 0 rgba(0, 0, 0, 0.1);
-  color: greenyellow;
+.container .buttons div:nth-child(4):hover {
+  -webkit-box-shadow: inset -6px 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: inset -6px 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

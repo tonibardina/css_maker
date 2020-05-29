@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #ff4a60, #fb2c45);
+}
+
+button {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 200px;
+  border: none;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #ff4a60, #fb2c45);
+  color: white;
+  -webkit-box-shadow: inset 0 0 20px 20px rgba(241, 31, 31, 0.67), inset 0 0 5px 5px rgba(187, 0, 0, 0.73);
+          box-shadow: inset 0 0 20px 20px rgba(241, 31, 31, 0.67), inset 0 0 5px 5px rgba(187, 0, 0, 0.73);
+}
+
+button .material-icons {
+  opacity: 50%;
+  font-size: 76px;
+  position: absolute;
+}
+
+button:hover {
+  background: radial-gradient(circle, #ffae35 0%, #fdba6800 70%);
+  color: #ffe6c1;
+  opacity: 100%;
+}
+
+button:hover .material-icons {
+  opacity: 100%;
+}
+
+button:hover .soul {
+  -webkit-animation: light 2s infinite;
+          animation: light 2s infinite;
+}
+
+button:hover .soul:before {
+  content: "";
+  position: absolute;
+  background-color: #ffe6c2;
+  width: 20px;
+  height: 20px;
+  left: 5px;
+  border-radius: 20px;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+button:hover .soul:after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 12px;
+  height: 12px;
+  left: 100px;
+  border-radius: 20px;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+button .soul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+}
+
+@-webkit-keyframes light {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes light {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
