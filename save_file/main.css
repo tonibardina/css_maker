@@ -1,0 +1,166 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 20px 10px rgba(204, 203, 203, 0.2);
+          box-shadow: 10px 10px 20px 10px rgba(204, 203, 203, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.card .container {
+  width: 150px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.card .container button {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+  width: 100%;
+  background-color: #4828ff;
+  color: white;
+  font-size: 15px;
+  font-family: "Helvetica";
+  font-weight: 200;
+  border-radius: 155px;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+
+.card .container button p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.card .container .file {
+  position: absolute;
+  left: 40px;
+  top: 12px;
+  font-size: 15px;
+  border-radius: 1.5px;
+  padding: 1px;
+  color: white;
+  z-index: 2;
+}
+
+.card .container .buttonLabel {
+  position: absolute;
+  width: 150px;
+  height: 41px;
+  z-index: -1;
+  border-radius: 155px;
+  background-color: #3315db;
+  z-index: 1;
+  -webkit-box-shadow: inset 0 0 0 4px #4828ff, inset 0 0 5px 5px #2811ac;
+          box-shadow: inset 0 0 0 4px #4828ff, inset 0 0 5px 5px #2811ac;
+}
+
+@-webkit-keyframes move {
+  40% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    z-index: 3;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+
+@keyframes move {
+  40% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    z-index: 3;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+
+@-webkit-keyframes save {
+  0% {
+    background-color: #4828ff;
+  }
+  20% {
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+            box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+  }
+  60% {
+    -webkit-transform: scale(2, 2) translate(-10px, -10px);
+            transform: scale(2, 2) translate(-10px, -10px);
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+            box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(-18px, 5px);
+            transform: scale(1, 1) translate(-18px, 5px);
+    z-index: 2;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+            box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+    background-color: #3214db;
+  }
+}
+
+@keyframes save {
+  0% {
+    background-color: #4828ff;
+  }
+  20% {
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+            box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+  }
+  60% {
+    -webkit-transform: scale(2, 2) translate(-10px, -10px);
+            transform: scale(2, 2) translate(-10px, -10px);
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+            box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(-18px, 5px);
+            transform: scale(1, 1) translate(-18px, 5px);
+    z-index: 2;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+            box-shadow: 1px 1px 2px 0 rgba(29, 12, 126, 0.5);
+    background-color: #3214db;
+  }
+}
+/*# sourceMappingURL=main.css.map */

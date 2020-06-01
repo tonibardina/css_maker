@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 10px 10px 20px 10px rgba(204, 203, 203, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+
+    & .container {
+        width: 150px;
+        position: relative;
+        margin-bottom: 40px;
+        & button {
+            transform-origin: right;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            width: 100%;
+            background-color: rgb(72, 40, 255);
+            color: white;
+            font-size: 15px;
+            font-family: "Helvetica";
+            font-weight: 200;
+            border-radius: 155px;
+            border: none;
+            outline: none;
+            z-index: 2;
+
+            & p {
+                margin: 0;
+                padding-left: 10px;
+            }
+        }
+
+        .file {
+            position: absolute;
+            left: 40px;
+            top: 12px;
+            font-size: 15px;
+            border-radius: 1.5px;
+            padding: 1px;
+            color: white;
+            z-index: 2;
+        }
+
+        .buttonLabel {
+            position: absolute;
+            width: 150px;
+            height: 41px;
+            z-index: -1;
+            border-radius: 155px;
+            background-color: #3315db;
+            z-index: 1;
+            box-shadow: inset 0 0 0 4px rgb(72, 40, 255), inset 0 0 5px 5px darken($color: #3315db, $amount: 10);
+        }
+    }
+}
+
+@keyframes move {
+    40% {
+        transform: rotate(35deg);
+        z-index: 3;
+    }
+    100% {
+        z-index: 3;
+    }
+}
+
+@keyframes save {
+    0% {
+        background-color: rgb(72, 40, 255);
+    }
+    20% {
+        box-shadow: 1px 1px 2px 0 rgba(darken($color: #3315db, $amount: 20), 0.5);
+    }
+    60% {
+        transform: scale(2, 2) translate(-10px, -10px);
+        box-shadow: 1px 1px 2px 0 rgba(darken($color: #3315db, $amount: 20), 0.5);
+    }
+    100% {
+        transform: scale(1, 1) translate(-18px, 5px);
+        z-index: 2;
+        box-shadow: 1px 1px 2px 0 rgba(darken($color: #3315db, $amount: 20), 0.5);
+        background-color: rgb(50, 20, 219);
+    }
+}
