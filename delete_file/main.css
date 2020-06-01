@@ -1,0 +1,168 @@
+:root {
+  --animation: none;
+  --boxShadow: inset 0 0 0 30px rgb(252, 110, 86), inset 0 0 0 80px rgb(255, 220, 145);
+  --boxShadowPseudo: inset 0 0 0 25px rgb(255, 220, 145);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.card {
+  position: relative;
+  width: 270px;
+  height: 350px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 20px 10px rgba(204, 203, 203, 0.2);
+          box-shadow: 10px 10px 20px 10px rgba(204, 203, 203, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.card .energySphere {
+  position: relative;
+  -webkit-animation: var(--animation);
+          animation: var(--animation);
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 300px;
+  -webkit-box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
+}
+
+.card .energySphere svg {
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  fill: #fc6e56;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+}
+
+.card .energySphere:before {
+  content: '';
+  -webkit-animation: var(--animation);
+          animation: var(--animation);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 300px;
+  -webkit-box-shadow: var(--boxShadowPseudo);
+          box-shadow: var(--boxShadowPseudo);
+  bottom: -10px;
+  right: -10px;
+}
+
+.card .energySphere:after {
+  content: '';
+  -webkit-animation: var(--animation);
+          animation: var(--animation);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 300px;
+  -webkit-box-shadow: var(--boxShadowPseudo);
+          box-shadow: var(--boxShadowPseudo);
+  top: -10px;
+  left: -10px;
+}
+
+.card button {
+  cursor: pointer;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+  width: 60%;
+  background-color: #fc6e56;
+  color: white;
+  font-size: 15px;
+  font-family: "Helvetica";
+  font-weight: 200;
+  border-radius: 155px;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+
+.card button:hover {
+  background-color: #fb4324;
+}
+
+@-webkit-keyframes explote {
+  100% {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes explote {
+  100% {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@-webkit-keyframes tick {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes tick {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

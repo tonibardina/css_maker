@@ -1,0 +1,110 @@
+:root {
+    --animation: none;
+    --boxShadow: inset 0 0 0 30px rgb(252, 110, 86), inset 0 0 0 80px rgb(255, 220, 145);
+    --boxShadowPseudo: inset 0 0 0 25px rgb(255, 220, 145);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.card {
+    position: relative;
+    width: 270px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 10px 10px 20px 10px rgba(204, 203, 203, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+
+    & .energySphere {
+        position: relative;
+        animation: var(--animation);
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 300px;
+        box-shadow: var(--boxShadow);
+
+        & svg {
+            width: 80%;
+            height: 80%;
+            opacity: 0;
+            fill: rgb(252, 110, 86);
+            transition: opacity .5s linear;
+        }
+    
+        &:before {
+            content: '';
+            animation: var(--animation);
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 300px;
+            box-shadow: var(--boxShadowPseudo);
+            bottom: -10px;
+            right: -10px;
+        }
+        &:after {
+            content: '';
+            animation: var(--animation);
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 300px;
+            box-shadow: var(--boxShadowPseudo);
+            top: -10px;
+            left: -10px;
+        }
+    }
+
+    & button {
+            cursor: pointer;
+            transform-origin: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            width: 60%;
+            background-color: rgb(252, 110, 86);
+            color: white;
+            font-size: 15px;
+            font-family: "Helvetica";
+            font-weight: 200;
+            border-radius: 155px;
+            border: none;
+            outline: none;
+            z-index: 2;
+
+            &:hover {
+                background-color: darken(rgb(252, 110, 86), 10%);
+            }
+        }
+    }
+
+@keyframes explote {
+    100% {
+        transform: scale(2,2);
+        box-shadow: none;
+    }
+}
+
+@keyframes tick {
+    0% {
+        transform: none;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
