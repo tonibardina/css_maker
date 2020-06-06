@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,600;0,800;1,600&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #131313;
+  font-family: 'Exo', sans-serif;
+  font-size: 7px;
+  color: white;
+}
+
+.container {
+  position: relative;
+}
+
+.container header {
+  position: relative;
+  width: 530px;
+  height: 280px;
+  border-radius: 10px;
+  border: 2px solid white;
+  -webkit-box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.5);
+  background: -260px 0px/200% url("./earth.png") no-repeat;
+}
+
+.container header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  width: calc(100% - 15px);
+  height: 10%;
+  border-top-left-radius: 7.5px;
+}
+
+.container header .navbar p {
+  font-weight: 800;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.container header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 0;
+}
+
+.container header .navbar ul li {
+  list-style: none;
+}
+
+.container .earth {
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  -webkit-clip-path: circle(33%);
+          clip-path: circle(33%);
+  background: -277px -158px/200% url("./earth.jpg") no-repeat;
+  top: 150px;
+  left: 50px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.container .title {
+  position: absolute;
+  top: 60px;
+  left: 140px;
+  border-radius: 10px;
+  color: #ffd900;
+  font-size: 45px;
+  line-height: 35px;
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.container .title p {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  padding: 20px;
+  color: white;
+  font-size: 50px;
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: bolder;
+  line-height: 40px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 10px 4px black, 0 0 40px 40px #121212, inset 0 0 20px 20px #0d0d0d;
+          box-shadow: 0 0 10px 4px black, 0 0 40px 40px #121212, inset 0 0 20px 20px #0d0d0d;
+}
+
+.card p {
+  position: relative;
+  padding-left: 20px;
+}
+
+.card p:before {
+  content: attr(title);
+  z-index: -1;
+  color: black;
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  -webkit-filter: blur(0.7px);
+          filter: blur(0.7px);
+}
+/*# sourceMappingURL=main.css.map */

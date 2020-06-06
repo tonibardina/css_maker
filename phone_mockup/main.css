@@ -1,0 +1,80 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Helvetica Neue';
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: bolder;
+  background-color: #f7f5f5;
+  color: #303030;
+}
+
+.phone {
+  position: relative;
+  height: 440px;
+  width: 210px;
+  background-color: #ececec;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 0 1px rgba(175, 175, 175, 0.699), inset -20px 0 20px 0 #cecece, inset 20px 0 20px 0 white, 15px 20px 20px 0 rgba(2, 2, 2, 0.2), 0 0 0 5px #ececec;
+          box-shadow: 0 0 0 1px rgba(175, 175, 175, 0.699), inset -20px 0 20px 0 #cecece, inset 20px 0 20px 0 white, 15px 20px 20px 0 rgba(2, 2, 2, 0.2), 0 0 0 5px #ececec;
+}
+
+.phone .phoneDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 440px;
+  width: 210px;
+}
+
+.phone .phoneDetails:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 80px;
+  width: 4px;
+  height: 45px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #cfcfcf;
+}
+
+.phone .phoneDetails:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 135px;
+  width: 4px;
+  height: 25px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #cfcfcf;
+}
+
+.phone:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #cfcfcf;
+  border-radius: 20px;
+  left: 90px;
+  top: 10px;
+}
+/*# sourceMappingURL=main.css.map */

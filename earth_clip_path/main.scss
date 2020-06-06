@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,600;0,800;1,600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #131313;
+    font-family: 'Exo', sans-serif;
+    font-size: 7px;
+    color: white;
+}
+
+.container {
+    position: relative;
+    //overflow: hidden;
+    & header {
+        position: relative;
+        width: 530px;
+        height: 280px;
+        border-radius: 10px;
+        border: 2px solid white;
+        box-shadow: 10px 10px 15px 10px rgba(0,0,0,.5);
+        background: -260px 0px / 200% url('./earth.png') no-repeat;
+        
+        & .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 15px;
+            width: calc(100% - 15px);
+            height: 10%;
+            border-top-left-radius: 7.5px;
+                        
+            & p {
+                font-weight: 800;
+                flex: 4;
+            }
+            & ul {
+                display: flex;
+                justify-content: space-around;
+                flex: 2;
+                padding: 0;
+                & li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+    
+    & .earth {
+        position: absolute;
+        width: 550px;
+        height: 300px;
+        clip-path: circle(33%);
+        background: -277px -158px / 200% url('./earth.jpg') no-repeat;
+        top: 150px;
+        left: 50px;
+        filter: grayscale(100%);
+    }
+
+    & .title {
+        position: absolute;
+        top: 60px;
+        left: 140px;
+        border-radius: 10px;
+        color: rgb(255, 217, 0);
+        font-size: 45px;
+        line-height: 35px;
+        font-family: 'Helvetica Neue';
+        font-style: italic;
+        font-weight: bolder;
+        & p {
+            margin: 0;
+        }
+    }
+}

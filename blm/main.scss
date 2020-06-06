@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+$main-color: rgb(0, 0, 0);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 40px;
+    border-radius: 50px;
+    box-shadow: 
+        0 0 10px 4px $main-color, 
+        0 0 40px 40px lighten($color: $main-color, $amount: 7),
+        inset 0 0 20px 20px lighten($color: $main-color, $amount: 5);
+
+    & p {
+        position: relative;
+        padding-left: 20px;
+        &:before {
+            content: attr(title);
+            z-index: -1;
+            color: rgb(0, 0, 0);          
+            position: absolute;
+            top: 2px;
+            left: 18px;
+            filter: blur(.7px);
+        }
+    }
+}
