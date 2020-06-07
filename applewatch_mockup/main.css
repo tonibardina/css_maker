@@ -1,0 +1,226 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  font-family: 'Helvetica Neue';
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+  font-weight: bolder;
+  line-height: 25px;
+}
+
+.container {
+  width: 40vw;
+  height: 45vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.appleWatch {
+  width: 31.5vw;
+  height: 37vw;
+  position: relative;
+  z-index: 2;
+  border-radius: 7vw;
+  -webkit-box-shadow: 10px 10px 10px 0 rgba(202, 202, 202, 0.3);
+          box-shadow: 10px 10px 10px 0 rgba(202, 202, 202, 0.3);
+}
+
+.appleWatch:before {
+  content: "";
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-filter: blur(0.1vw);
+          filter: blur(0.1vw);
+  border-radius: 10vw;
+  width: 24vw;
+  height: 3vw;
+  top: 0.6vw;
+  left: 3.8vw;
+}
+
+.appleWatch .screenContent {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 7vw;
+  background-color: #000000;
+  -webkit-box-shadow: inset 0 0 0.1vw 0.3vw #dadada, inset 0 0 0.3vw 0.5vw #dadada, inset 0 0 0.2vw 0.9vw rgba(0, 0, 0, 0.9), inset 0 0 0 1.4vw #dadada, inset 0 0 0 1.7vw black, inset 0 0 1.5vw 2.5vw #535353;
+          box-shadow: inset 0 0 0.1vw 0.3vw #dadada, inset 0 0 0.3vw 0.5vw #dadada, inset 0 0 0.2vw 0.9vw rgba(0, 0, 0, 0.9), inset 0 0 0 1.4vw #dadada, inset 0 0 0 1.7vw black, inset 0 0 1.5vw 2.5vw #535353;
+}
+
+.appleWatch .screenContent::before {
+  content: "";
+  border-radius: 10vw;
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  top: 9vw;
+  right: -5vw;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, black), color-stop(10%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, black 10%, rgba(0, 0, 0, 0) 10%);
+}
+
+.appleWatch .roundControllerShape {
+  position: absolute;
+  overflow: hidden;
+  top: 9.5vw;
+  right: -1.2vw;
+  width: 1.8vw;
+  height: 4.8vw;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  background-color: rgba(19, 18, 18, 0.9);
+}
+
+.appleWatch .roundController {
+  position: absolute;
+  overflow: hidden;
+  width: 2vw;
+  height: 5.2vw;
+  border-top-left-radius: 0.7vw;
+  border-bottom-left-radius: 0.7vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), to(white));
+  background: linear-gradient(to bottom, #aaaaaa, white);
+  -webkit-box-shadow: inset 0 0.1vw 0.2vw 0 rgba(0, 0, 0, 0.8), inset 0 0.3vw 0.2vw 0 #dadada, inset 0 0.6vw 0.2vw 0 white, inset 0 1.3vw 0 0 rgba(0, 0, 0, 0.8), inset 0 -0.1vw 0.2vw 0 rgba(0, 0, 0, 0.8), inset 0 -0.3vw 0.2vw 0 #dadada, inset 0 -0.6vw 0.2vw 0 white, inset 0 -1.3vw 0 0 rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 0.1vw 0.2vw 0 rgba(0, 0, 0, 0.8), inset 0 0.3vw 0.2vw 0 #dadada, inset 0 0.6vw 0.2vw 0 white, inset 0 1.3vw 0 0 rgba(0, 0, 0, 0.8), inset 0 -0.1vw 0.2vw 0 rgba(0, 0, 0, 0.8), inset 0 -0.3vw 0.2vw 0 #dadada, inset 0 -0.6vw 0.2vw 0 white, inset 0 -1.3vw 0 0 rgba(0, 0, 0, 0.8);
+}
+
+.appleWatch .roundController i {
+  position: absolute;
+  width: 0.75vw;
+  height: 0.17vw;
+  right: 0;
+  background-color: gray;
+}
+
+.appleWatch .roundController :nth-child(1) {
+  -webkit-transform: translate(0, 0.33333vw);
+          transform: translate(0, 0.33333vw);
+}
+
+.appleWatch .roundController :nth-child(2) {
+  -webkit-transform: translate(0, 0.66667vw);
+          transform: translate(0, 0.66667vw);
+}
+
+.appleWatch .roundController :nth-child(3) {
+  -webkit-transform: translate(0, 1vw);
+          transform: translate(0, 1vw);
+}
+
+.appleWatch .roundController :nth-child(4) {
+  -webkit-transform: translate(0, 1.33333vw);
+          transform: translate(0, 1.33333vw);
+}
+
+.appleWatch .roundController :nth-child(5) {
+  -webkit-transform: translate(0, 1.66667vw);
+          transform: translate(0, 1.66667vw);
+}
+
+.appleWatch .roundController :nth-child(6) {
+  -webkit-transform: translate(0, 2vw);
+          transform: translate(0, 2vw);
+}
+
+.appleWatch .roundController :nth-child(7) {
+  -webkit-transform: translate(0, 2.33333vw);
+          transform: translate(0, 2.33333vw);
+}
+
+.appleWatch .roundController :nth-child(8) {
+  -webkit-transform: translate(0, 2.66667vw);
+          transform: translate(0, 2.66667vw);
+}
+
+.appleWatch .roundController :nth-child(9) {
+  -webkit-transform: translate(0, 3vw);
+          transform: translate(0, 3vw);
+}
+
+.appleWatch .roundController :nth-child(10) {
+  -webkit-transform: translate(0, 3.33333vw);
+          transform: translate(0, 3.33333vw);
+}
+
+.appleWatch .roundController :nth-child(11) {
+  -webkit-transform: translate(0, 3.66667vw);
+          transform: translate(0, 3.66667vw);
+}
+
+.appleWatch .roundController :nth-child(12) {
+  -webkit-transform: translate(0, 4vw);
+          transform: translate(0, 4vw);
+}
+
+.appleWatch .roundController :nth-child(13) {
+  -webkit-transform: translate(0, 4.33333vw);
+          transform: translate(0, 4.33333vw);
+}
+
+.appleWatch .roundController :nth-child(14) {
+  -webkit-transform: translate(0, 4.66667vw);
+          transform: translate(0, 4.66667vw);
+}
+
+.appleWatch .roundController :nth-child(15) {
+  -webkit-transform: translate(0, 5vw);
+          transform: translate(0, 5vw);
+}
+
+.appleWatch .roundController :nth-child(16) {
+  -webkit-transform: translate(0, 5.33333vw);
+          transform: translate(0, 5.33333vw);
+}
+
+.appleWatch .roundController :nth-child(17) {
+  -webkit-transform: translate(0, 5.66667vw);
+          transform: translate(0, 5.66667vw);
+}
+
+.appleWatch .roundController :nth-child(18) {
+  -webkit-transform: translate(0, 6vw);
+          transform: translate(0, 6vw);
+}
+
+.appleWatch .roundController :nth-child(19) {
+  -webkit-transform: translate(0, 6.33333vw);
+          transform: translate(0, 6.33333vw);
+}
+
+.appleWatch .roundController :nth-child(20) {
+  -webkit-transform: translate(0, 6.66667vw);
+          transform: translate(0, 6.66667vw);
+}
+/*# sourceMappingURL=main.css.map */

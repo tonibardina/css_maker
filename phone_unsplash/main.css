@@ -117,7 +117,7 @@ button {
 
 .phone .phoneContent .content .cardContainer {
   position: relative;
-  width: 91.5%;
+  width: 100%;
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,6 +177,7 @@ button {
   width: 85%;
   height: 150px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .phone .phoneContent .content .cardContainer .card .cardReactions {
@@ -190,7 +191,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: calc(100% - 10px);
+  width: 95%;
   margin-top: 10px;
   height: 15px;
   color: white;
@@ -198,7 +199,6 @@ button {
   padding: 5px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  border-radius: 10px;
 }
 
 .phone .phoneContent .content .cardContainer .card .cardReactions .download {
