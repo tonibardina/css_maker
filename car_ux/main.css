@@ -1,3 +1,7 @@
+:root {
+  --car-image: center / contain url('car2.png') no-repeat;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,11 +175,79 @@ body {
 .card .content .status:before {
   content: '';
   position: absolute;
-  width: 90%;
-  height: 70px;
-  left: 5px;
-  top: -40px;
-  background: center/contain url("car red bmw.png") no-repeat;
+  width: 100%;
+  height: 90px;
+  left: 0px;
+  top: -50px;
+  background: var(--car-image);
+}
+
+.card .content .statusData {
+  width: 70%;
+  padding: 15px 15px 15px 15px;
+  background-color: #202020;
+  border-radius: 10px;
+  margin-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .content .statusData .material-icons {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.card .content .statusData .wash, .card .content .statusData .gas, .card .content .statusData .oil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0 5px 0;
+}
+
+.card .content .statusData .bar {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #131313;
+}
+
+.card .content .statusData .bar:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 7px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#EB3349), to(#F45C43));
+  background: linear-gradient(to right, #EB3349, #F45C43);
+}
+
+.card .content .statusData .wash .bar:before {
+  width: 20px;
+}
+
+.card .content .statusData .gas .bar:before {
+  width: 50px;
+}
+
+.card .content .statusData .oil .bar:before {
+  width: 34px;
 }
 
 .card .footer {
@@ -197,6 +269,10 @@ body {
   margin: 20px 0 30px 0;
   -webkit-box-shadow: 0 0 1px 1px #222222, 0 0 1px 3px #e9e9e9, 0 0 0 4px #242424, inset 0 0 0 1px black;
           box-shadow: 0 0 1px 1px #222222, 0 0 1px 3px #e9e9e9, 0 0 0 4px #242424, inset 0 0 0 1px black;
+}
+
+.card .footer .clicked {
+  color: #EB3349;
 }
 
 .card .footer .material-icons {
