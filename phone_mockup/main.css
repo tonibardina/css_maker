@@ -28,7 +28,7 @@ body {
           box-shadow: 0 0 0 1px rgba(175, 175, 175, 0.699), inset -20px 0 20px 0 #cecece, inset 20px 0 20px 0 white, 15px 20px 20px 0 rgba(2, 2, 2, 0.2), 0 0 0 5px #ececec;
 }
 
-.phone .phoneDetails {
+.phone .phoneContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,7 @@ body {
   width: 210px;
 }
 
-.phone .phoneDetails:before {
+.phone .phoneContent:before {
   content: '';
   position: absolute;
   left: -10px;
@@ -55,7 +55,7 @@ body {
   background-color: #cfcfcf;
 }
 
-.phone .phoneDetails:after {
+.phone .phoneContent:after {
   content: '';
   position: absolute;
   left: -10px;
