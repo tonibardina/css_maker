@@ -206,6 +206,9 @@ body {
 
         & .clicked {
             color: #EB3349;
+            &:first-child {
+                color: #F45C43;
+            }
         }
 
         & .material-icons {

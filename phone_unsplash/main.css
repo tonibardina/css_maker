@@ -117,7 +117,7 @@ button {
 
 .phone .phoneContent .content .cardContainer {
   position: relative;
-  width: 100%;
+  width: 91.5%;
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,7 +156,6 @@ button {
 }
 
 .phone .phoneContent .content .cardContainer .cardInfo .material-icons {
-  padding-left: 1px;
   font-size: 15px;
   border-radius: 100px;
 }

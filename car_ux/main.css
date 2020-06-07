@@ -276,6 +276,10 @@ body {
   color: #EB3349;
 }
 
+.card .footer .clicked:first-child {
+  color: #F45C43;
+}
+
 .card .footer .material-icons {
   display: block;
   position: relative;
