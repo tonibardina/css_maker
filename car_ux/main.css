@@ -152,7 +152,7 @@ body {
       -ms-flex: 4;
           flex: 4;
   height: 100%;
-  background-color: #0f0f0f;
+  background-color: #202020;
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: white;
@@ -170,6 +170,7 @@ body {
   color: #0f0f0f;
   background: white;
   padding: 0;
+  outline: none;
 }
 
 .card .content .status:before {
@@ -289,22 +290,6 @@ body {
           justify-content: center;
   font-size: 15px;
   padding: 15px 0 15px 0;
-}
-
-.card .footer .material-icons:first-child:hover {
-  background-color: #080808;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.card .footer .material-icons:hover {
-  background-color: #080808;
-}
-
-.card .footer .material-icons:last-child:hover {
-  background-color: #080808;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .card .footer .material-icons:not(:last-child):before {
