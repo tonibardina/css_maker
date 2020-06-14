@@ -1,0 +1,55 @@
+:root {
+    --car-image: center / contain url('car2.png') no-repeat;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Helvetica Neue';
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: bolder;
+    background: #e52d27 center / cover url('./bg.png');
+    color: #fff8fa;
+}
+
+
+.container {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 200px;
+    padding: 15px;
+    background-color: #fff8fa;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+
+    & .bar {
+        position: relative;
+        height: 15px;
+        width: 90%;
+        border-radius: 50px;
+        background-color: darken(#fff8fa, 5%);
+        margin: 10px 0 10px 0;
+        &:before {
+            content: '';
+            animation: loading 2s linear;
+            position: absolute;
+            left: 0;
+            height: 15px;
+            width: 100%;
+            border-radius: 20px;
+            background: linear-gradient(to right, #f81933, #fd6762);
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+}

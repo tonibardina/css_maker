@@ -1,0 +1,74 @@
+:root {
+  --car-image: center / contain url('car2.png') no-repeat;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Helvetica Neue';
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: bolder;
+  background: #e52d27 center/cover url("./bg.png");
+  color: #fff8fa;
+}
+
+.container {
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  width: 200px;
+  padding: 15px;
+  background-color: #fff8fa;
+  border-radius: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .bar {
+  position: relative;
+  height: 15px;
+  width: 90%;
+  border-radius: 50px;
+  background-color: #ffdfe8;
+  margin: 10px 0 10px 0;
+}
+
+.container .bar:before {
+  content: '';
+  -webkit-animation: loading 2s linear;
+          animation: loading 2s linear;
+  position: absolute;
+  left: 0;
+  height: 15px;
+  width: 100%;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#f81933), to(#fd6762));
+  background: linear-gradient(to right, #f81933, #fd6762);
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

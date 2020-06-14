@@ -14,9 +14,8 @@ body {
   background-color: #fde5f0;
 }
 
-.card {
+.pearl {
   position: relative;
-  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,13 +36,13 @@ body {
   color: rgba(255, 247, 247, 0.8);
 }
 
-.card p {
+.pearl p {
   position: relative;
   margin: 0;
   z-index: 1;
 }
 
-.card p:before {
+.pearl p:before {
   content: attr(title);
   z-index: -1;
   color: #ca8f0f;

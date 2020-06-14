@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Helvetica Neue';
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: bolder;
+    background-color: #e52d27;
+}
+
+h1 {
+    color: darken(#e52d27, 10%);
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: attr(title);
+        z-index: -1;
+        color: darken(#e52d27, 25%);          
+        position: absolute;
+        top: -1px;
+        left: -1px;
+    }
+}
