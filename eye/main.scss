@@ -1,0 +1,113 @@
+@mixin getColorByNum($num) {
+    @if $num%2 == 0 {
+        background: linear-gradient(93deg, rgba(192, 252, 200, 1) 73%, rgba(117, 243, 134, 0) 10%);
+    } @else if $num%3 == 0 {
+        background: linear-gradient(93deg, rgba(244, 248, 204, 1) 71%, rgba(229, 248, 122, 0) 10%);
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red center / contain url('./bg.png') no-repeat;
+}
+
+li {
+    list-style-type: none;
+    list-style: none;
+}
+
+.eye {
+    position: absolute;
+    left: 310px;
+    top: 200px;
+    width: 200px;
+    height: 200px;
+    background: white radial-gradient(circle, rgb(243, 242, 242) 60%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0em 1em 1em rgba(0, 0, 0, 0.3);
+
+    & .iris {
+        width: 90px;
+        height: 90px;
+        background: radial-gradient(circle, rgba(32, 0, 205, 1) 0%, rgba(10, 1, 52, 1) 100%);
+        border-radius: 50px;
+        box-shadow: inset 0 0 1em 0.3em #000000, 0 0 1em 0.3em rgba(245, 196, 196, 0.8);
+        position: relative;
+        transition: 0.2s linear all;
+
+        & div {
+            position: absolute;
+            top: 2.15em;
+            left: 2.83em;
+            & i {
+                height: 22px;
+                width: 0.5px;
+                background: linear-gradient(93deg, rgba(192, 237, 252, 1) 77%, rgba(248, 251, 229, 0) 10%);
+                position: absolute;
+                display: block;
+                transform: translate(0, -2em);
+                filter: blur(0.3em);
+            }
+
+            @for $i from 1 through 90 {
+                & :nth-child(#{$i}) {
+                    transform: rotate(#{$i * 360/90-6}deg) translate(0, 2em);
+                    filter: blur(0.03em);
+                    @include getColorByNum($i);
+                }
+            }
+        }
+
+        &:before {
+            content: "";
+            top: 0.5em;
+            left: 0.53em;
+            width: 55px;
+            height: 55px;
+            border-radius: 100px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            z-index: 10;
+            filter: blur(0.2em);
+        }
+    }
+
+    &:before {
+        content: "";
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background: linear-gradient(220deg, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0) 50%);
+        position: absolute;
+        z-index: 11;
+    }
+}
+
+.retina {
+    transition: 0.2s linear all;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 0 0 0.7em 0.9em rgba(217, 255, 0, 0.4);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+    border-radius: 400px;
+}

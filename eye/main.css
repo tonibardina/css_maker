@@ -1,0 +1,815 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: red center/contain url("./bg.png") no-repeat;
+}
+
+li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.eye {
+  position: absolute;
+  left: 310px;
+  top: 200px;
+  width: 200px;
+  height: 200px;
+  background: white radial-gradient(circle, #f3f2f2 60%, rgba(255, 255, 255, 0.1) 100%);
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0em 1em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0em 1em 1em rgba(0, 0, 0, 0.3);
+}
+
+.eye .iris {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #2000cd 0%, #0a0134 100%);
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0 0 1em 0.3em #000000, 0 0 1em 0.3em rgba(245, 196, 196, 0.8);
+          box-shadow: inset 0 0 1em 0.3em #000000, 0 0 1em 0.3em rgba(245, 196, 196, 0.8);
+  position: relative;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+}
+
+.eye .iris div {
+  position: absolute;
+  top: 2.15em;
+  left: 2.83em;
+}
+
+.eye .iris div i {
+  height: 22px;
+  width: 0.5px;
+  background: linear-gradient(93deg, #c0edfc 77%, rgba(248, 251, 229, 0) 10%);
+  position: absolute;
+  display: block;
+  -webkit-transform: translate(0, -2em);
+          transform: translate(0, -2em);
+  -webkit-filter: blur(0.3em);
+          filter: blur(0.3em);
+}
+
+.eye .iris div :nth-child(1) {
+  -webkit-transform: rotate(-2deg) translate(0, 2em);
+          transform: rotate(-2deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(2) {
+  -webkit-transform: rotate(2deg) translate(0, 2em);
+          transform: rotate(2deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(3) {
+  -webkit-transform: rotate(6deg) translate(0, 2em);
+          transform: rotate(6deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(4) {
+  -webkit-transform: rotate(10deg) translate(0, 2em);
+          transform: rotate(10deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(5) {
+  -webkit-transform: rotate(14deg) translate(0, 2em);
+          transform: rotate(14deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(6) {
+  -webkit-transform: rotate(18deg) translate(0, 2em);
+          transform: rotate(18deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(7) {
+  -webkit-transform: rotate(22deg) translate(0, 2em);
+          transform: rotate(22deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(8) {
+  -webkit-transform: rotate(26deg) translate(0, 2em);
+          transform: rotate(26deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(9) {
+  -webkit-transform: rotate(30deg) translate(0, 2em);
+          transform: rotate(30deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(10) {
+  -webkit-transform: rotate(34deg) translate(0, 2em);
+          transform: rotate(34deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(11) {
+  -webkit-transform: rotate(38deg) translate(0, 2em);
+          transform: rotate(38deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(12) {
+  -webkit-transform: rotate(42deg) translate(0, 2em);
+          transform: rotate(42deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(13) {
+  -webkit-transform: rotate(46deg) translate(0, 2em);
+          transform: rotate(46deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(14) {
+  -webkit-transform: rotate(50deg) translate(0, 2em);
+          transform: rotate(50deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(15) {
+  -webkit-transform: rotate(54deg) translate(0, 2em);
+          transform: rotate(54deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(16) {
+  -webkit-transform: rotate(58deg) translate(0, 2em);
+          transform: rotate(58deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(17) {
+  -webkit-transform: rotate(62deg) translate(0, 2em);
+          transform: rotate(62deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(18) {
+  -webkit-transform: rotate(66deg) translate(0, 2em);
+          transform: rotate(66deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(19) {
+  -webkit-transform: rotate(70deg) translate(0, 2em);
+          transform: rotate(70deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(20) {
+  -webkit-transform: rotate(74deg) translate(0, 2em);
+          transform: rotate(74deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(21) {
+  -webkit-transform: rotate(78deg) translate(0, 2em);
+          transform: rotate(78deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(22) {
+  -webkit-transform: rotate(82deg) translate(0, 2em);
+          transform: rotate(82deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(23) {
+  -webkit-transform: rotate(86deg) translate(0, 2em);
+          transform: rotate(86deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(24) {
+  -webkit-transform: rotate(90deg) translate(0, 2em);
+          transform: rotate(90deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(25) {
+  -webkit-transform: rotate(94deg) translate(0, 2em);
+          transform: rotate(94deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(26) {
+  -webkit-transform: rotate(98deg) translate(0, 2em);
+          transform: rotate(98deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(27) {
+  -webkit-transform: rotate(102deg) translate(0, 2em);
+          transform: rotate(102deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(28) {
+  -webkit-transform: rotate(106deg) translate(0, 2em);
+          transform: rotate(106deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(29) {
+  -webkit-transform: rotate(110deg) translate(0, 2em);
+          transform: rotate(110deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(30) {
+  -webkit-transform: rotate(114deg) translate(0, 2em);
+          transform: rotate(114deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(31) {
+  -webkit-transform: rotate(118deg) translate(0, 2em);
+          transform: rotate(118deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(32) {
+  -webkit-transform: rotate(122deg) translate(0, 2em);
+          transform: rotate(122deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(33) {
+  -webkit-transform: rotate(126deg) translate(0, 2em);
+          transform: rotate(126deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(34) {
+  -webkit-transform: rotate(130deg) translate(0, 2em);
+          transform: rotate(130deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(35) {
+  -webkit-transform: rotate(134deg) translate(0, 2em);
+          transform: rotate(134deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(36) {
+  -webkit-transform: rotate(138deg) translate(0, 2em);
+          transform: rotate(138deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(37) {
+  -webkit-transform: rotate(142deg) translate(0, 2em);
+          transform: rotate(142deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(38) {
+  -webkit-transform: rotate(146deg) translate(0, 2em);
+          transform: rotate(146deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(39) {
+  -webkit-transform: rotate(150deg) translate(0, 2em);
+          transform: rotate(150deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(40) {
+  -webkit-transform: rotate(154deg) translate(0, 2em);
+          transform: rotate(154deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(41) {
+  -webkit-transform: rotate(158deg) translate(0, 2em);
+          transform: rotate(158deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(42) {
+  -webkit-transform: rotate(162deg) translate(0, 2em);
+          transform: rotate(162deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(43) {
+  -webkit-transform: rotate(166deg) translate(0, 2em);
+          transform: rotate(166deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(44) {
+  -webkit-transform: rotate(170deg) translate(0, 2em);
+          transform: rotate(170deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(45) {
+  -webkit-transform: rotate(174deg) translate(0, 2em);
+          transform: rotate(174deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(46) {
+  -webkit-transform: rotate(178deg) translate(0, 2em);
+          transform: rotate(178deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(47) {
+  -webkit-transform: rotate(182deg) translate(0, 2em);
+          transform: rotate(182deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(48) {
+  -webkit-transform: rotate(186deg) translate(0, 2em);
+          transform: rotate(186deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(49) {
+  -webkit-transform: rotate(190deg) translate(0, 2em);
+          transform: rotate(190deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(50) {
+  -webkit-transform: rotate(194deg) translate(0, 2em);
+          transform: rotate(194deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(51) {
+  -webkit-transform: rotate(198deg) translate(0, 2em);
+          transform: rotate(198deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(52) {
+  -webkit-transform: rotate(202deg) translate(0, 2em);
+          transform: rotate(202deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(53) {
+  -webkit-transform: rotate(206deg) translate(0, 2em);
+          transform: rotate(206deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(54) {
+  -webkit-transform: rotate(210deg) translate(0, 2em);
+          transform: rotate(210deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(55) {
+  -webkit-transform: rotate(214deg) translate(0, 2em);
+          transform: rotate(214deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(56) {
+  -webkit-transform: rotate(218deg) translate(0, 2em);
+          transform: rotate(218deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(57) {
+  -webkit-transform: rotate(222deg) translate(0, 2em);
+          transform: rotate(222deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(58) {
+  -webkit-transform: rotate(226deg) translate(0, 2em);
+          transform: rotate(226deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(59) {
+  -webkit-transform: rotate(230deg) translate(0, 2em);
+          transform: rotate(230deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(60) {
+  -webkit-transform: rotate(234deg) translate(0, 2em);
+          transform: rotate(234deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(61) {
+  -webkit-transform: rotate(238deg) translate(0, 2em);
+          transform: rotate(238deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(62) {
+  -webkit-transform: rotate(242deg) translate(0, 2em);
+          transform: rotate(242deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(63) {
+  -webkit-transform: rotate(246deg) translate(0, 2em);
+          transform: rotate(246deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(64) {
+  -webkit-transform: rotate(250deg) translate(0, 2em);
+          transform: rotate(250deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(65) {
+  -webkit-transform: rotate(254deg) translate(0, 2em);
+          transform: rotate(254deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(66) {
+  -webkit-transform: rotate(258deg) translate(0, 2em);
+          transform: rotate(258deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(67) {
+  -webkit-transform: rotate(262deg) translate(0, 2em);
+          transform: rotate(262deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(68) {
+  -webkit-transform: rotate(266deg) translate(0, 2em);
+          transform: rotate(266deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(69) {
+  -webkit-transform: rotate(270deg) translate(0, 2em);
+          transform: rotate(270deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(70) {
+  -webkit-transform: rotate(274deg) translate(0, 2em);
+          transform: rotate(274deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(71) {
+  -webkit-transform: rotate(278deg) translate(0, 2em);
+          transform: rotate(278deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(72) {
+  -webkit-transform: rotate(282deg) translate(0, 2em);
+          transform: rotate(282deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(73) {
+  -webkit-transform: rotate(286deg) translate(0, 2em);
+          transform: rotate(286deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(74) {
+  -webkit-transform: rotate(290deg) translate(0, 2em);
+          transform: rotate(290deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(75) {
+  -webkit-transform: rotate(294deg) translate(0, 2em);
+          transform: rotate(294deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(76) {
+  -webkit-transform: rotate(298deg) translate(0, 2em);
+          transform: rotate(298deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(77) {
+  -webkit-transform: rotate(302deg) translate(0, 2em);
+          transform: rotate(302deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(78) {
+  -webkit-transform: rotate(306deg) translate(0, 2em);
+          transform: rotate(306deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(79) {
+  -webkit-transform: rotate(310deg) translate(0, 2em);
+          transform: rotate(310deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(80) {
+  -webkit-transform: rotate(314deg) translate(0, 2em);
+          transform: rotate(314deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(81) {
+  -webkit-transform: rotate(318deg) translate(0, 2em);
+          transform: rotate(318deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(82) {
+  -webkit-transform: rotate(322deg) translate(0, 2em);
+          transform: rotate(322deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(83) {
+  -webkit-transform: rotate(326deg) translate(0, 2em);
+          transform: rotate(326deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(84) {
+  -webkit-transform: rotate(330deg) translate(0, 2em);
+          transform: rotate(330deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(85) {
+  -webkit-transform: rotate(334deg) translate(0, 2em);
+          transform: rotate(334deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(86) {
+  -webkit-transform: rotate(338deg) translate(0, 2em);
+          transform: rotate(338deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(87) {
+  -webkit-transform: rotate(342deg) translate(0, 2em);
+          transform: rotate(342deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #f4f8cc 71%, rgba(229, 248, 122, 0) 10%);
+}
+
+.eye .iris div :nth-child(88) {
+  -webkit-transform: rotate(346deg) translate(0, 2em);
+          transform: rotate(346deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris div :nth-child(89) {
+  -webkit-transform: rotate(350deg) translate(0, 2em);
+          transform: rotate(350deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+}
+
+.eye .iris div :nth-child(90) {
+  -webkit-transform: rotate(354deg) translate(0, 2em);
+          transform: rotate(354deg) translate(0, 2em);
+  -webkit-filter: blur(0.03em);
+          filter: blur(0.03em);
+  background: linear-gradient(93deg, #c0fcc8 73%, rgba(117, 243, 134, 0) 10%);
+}
+
+.eye .iris:before {
+  content: "";
+  top: 0.5em;
+  left: 0.53em;
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 10;
+  -webkit-filter: blur(0.2em);
+          filter: blur(0.2em);
+}
+
+.eye:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(220deg, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0) 50%);
+  position: absolute;
+  z-index: 11;
+}
+
+.retina {
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 0.7em 0.9em rgba(217, 255, 0, 0.4);
+          box-shadow: 0 0 0.7em 0.9em rgba(217, 255, 0, 0.4);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 350px;
+  height: 350px;
+  border-radius: 400px;
+}
+/*# sourceMappingURL=main.css.map */

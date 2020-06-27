@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+}
+
+.logo .green {
+  width: 20px;
+  height: 20px;
+}
+
+.logo .blue {
+  width: 20px;
+  height: 20px;
+}
+
+.logo .red {
+  width: 20px;
+  height: 20px;
+}
+
+.logo .yellow {
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=main.css.map */

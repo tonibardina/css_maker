@@ -1,0 +1,37 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ea6216;
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 400px;
+}
+
+.container img {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  width: 200px;
+  position: absolute;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  z-index: 1;
+}
+
+.container .first {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  z-index: 2;
+}
+/*# sourceMappingURL=main.css.map */

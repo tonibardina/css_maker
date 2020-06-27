@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(234, 98, 22); 
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    & img {
+        transition: all .3s linear;
+        width: 200px;
+        position: absolute;
+        transform: rotate(10deg);
+        z-index: 1;
+    }
+    & .first {
+        transform: rotate(-10deg);
+        z-index: 2;
+    }
+}

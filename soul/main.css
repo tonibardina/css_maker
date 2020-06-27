@@ -1,0 +1,63 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Helvetica Neue";
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: bolder;
+  background: #fff8fa;
+}
+
+.container {
+  position: relative;
+  -webkit-animation: bubbles 2s infinite;
+          animation: bubbles 2s infinite;
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  background: center/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, bottom right/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, top left/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, #f0f1f3;
+  -webkit-box-shadow: 5px 5px 10px 10px rgba(143, 143, 143, 0.062), inset 0 0 20px 10px rgba(139, 139, 139, 0.144);
+          box-shadow: 5px 5px 10px 10px rgba(143, 143, 143, 0.062), inset 0 0 20px 10px rgba(139, 139, 139, 0.144);
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, white 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+@-webkit-keyframes bubbles {
+  30% {
+    background: bottom right/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, center/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, bottom left/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, #f0f1f3;
+  }
+  60% {
+    background: bottom left/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, top right/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, center/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, #f0f1f3;
+  }
+  90% {
+    background: top left/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, center/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, bottom right/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, #f0f1f3;
+  }
+}
+
+@keyframes bubbles {
+  30% {
+    background: bottom right/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, center/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, bottom left/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, #f0f1f3;
+  }
+  60% {
+    background: bottom left/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, top right/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, center/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, #f0f1f3;
+  }
+  90% {
+    background: top left/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, center/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, bottom right/150px 150px radial-gradient(circle, #f0f9fa 0%, #cbdcdd 40%, #adc3c5 60%, rgba(255, 255, 255, 0) 60%) no-repeat, #f0f1f3;
+  }
+}
+/*# sourceMappingURL=main.css.map */

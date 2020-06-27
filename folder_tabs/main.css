@@ -1,0 +1,67 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Bebas Neue';
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: bolder;
+  background-color: #e52d27;
+  color: #e52d27;
+}
+
+.tab {
+  position: relative;
+  background-color: #fff8fa;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 300px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab div {
+  position: absolute;
+  overflow: hidden;
+  background-color: #fff8fa;
+  width: calc(100% + 80px);
+  height: 40px;
+  bottom: 0;
+  left: -40px;
+}
+
+.tab div:before {
+  content: '';
+  position: absolute;
+  background-color: #e52d27;
+  width: 40px;
+  height: 40px;
+  border-bottom-right-radius: 50px;
+}
+
+.tab div:after {
+  content: '';
+  position: absolute;
+  background-color: #e52d27;
+  width: 40px;
+  height: 40px;
+  border-bottom-left-radius: 50px;
+  right: 0px;
+}
+/*# sourceMappingURL=main.css.map */

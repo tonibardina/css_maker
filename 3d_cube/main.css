@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: red center/contain url("./bg.png") no-repeat;
+}
+
+.box {
+  position: absolute;
+  top: 350px;
+  left: 350px;
+  -webkit-transform: rotateX(-20deg) rotateY(45deg);
+          transform: rotateX(-20deg) rotateY(45deg);
+  width: 100px;
+  height: 100px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.box:hover .top {
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 100px);
+          transform: rotateX(90deg) translate3d(0, 0, 100px);
+}
+
+.box:hover .left {
+  -webkit-transform: rotateY(-90deg) translate3d(0, 0, 100px);
+          transform: rotateY(-90deg) translate3d(0, 0, 100px);
+}
+
+.box:hover .front {
+  -webkit-transform: translate3d(0, 0, 100px);
+          transform: translate3d(0, 0, 100px);
+}
+
+.box:hover .right {
+  -webkit-transform: rotateY(90deg) translate3d(0, 0, 100px);
+          transform: rotateY(90deg) translate3d(0, 0, 100px);
+}
+
+.box:hover .bottom {
+  -webkit-transform: translate3d(0, 0, -100px);
+          transform: translate3d(0, 0, -100px);
+}
+
+.box:hover .down {
+  -webkit-transform: rotateX(-90deg) translate3d(0, 0, 100px);
+          transform: rotateX(-90deg) translate3d(0, 0, 100px);
+}
+
+.product {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: center/contain url("./hp.png") no-repeat;
+  border-radius: 100px;
+  -webkit-transform: rotateY(-45deg);
+          transform: rotateY(-45deg);
+}
+
+.face {
+  pointer-events: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  border: 1px solid #555555;
+  -webkit-box-shadow: inset 0 0 0 5px #555555, inset 0 0 7px 7px rgba(77, 76, 76, 0.5);
+          box-shadow: inset 0 0 0 5px #555555, inset 0 0 7px 7px rgba(77, 76, 76, 0.5);
+  background-color: rgba(204, 204, 204, 0.8);
+}
+
+.top {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -webkit-transform: rotateX(90deg) rotateY(0deg) translate3d(0, 0, 50px);
+          transform: rotateX(90deg) rotateY(0deg) translate3d(0, 0, 50px);
+}
+
+.left {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -webkit-transform: rotateX(0deg) rotateY(-90deg) translate3d(0, 0, 50px);
+          transform: rotateX(0deg) rotateY(-90deg) translate3d(0, 0, 50px);
+}
+
+.front {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -webkit-transform: rotateX(0deg) rotateY(0deg) translate3d(0, 0, 50px);
+          transform: rotateX(0deg) rotateY(0deg) translate3d(0, 0, 50px);
+}
+
+.right {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -webkit-transform: rotateX(0deg) rotateY(90deg) translate3d(0, 0, 50px);
+          transform: rotateX(0deg) rotateY(90deg) translate3d(0, 0, 50px);
+  background: #555555;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.down {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -webkit-transform: rotateX(-90deg) rotateY(0deg) translate3d(0, 0, 50px);
+          transform: rotateX(-90deg) rotateY(0deg) translate3d(0, 0, 50px);
+  background: #555555;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bottom {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  -webkit-transform: rotateX(0deg) rotateY(0deg) translate3d(0, 0, -50px);
+          transform: rotateX(0deg) rotateY(0deg) translate3d(0, 0, -50px);
+  background: #555555;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=main.css.map */
